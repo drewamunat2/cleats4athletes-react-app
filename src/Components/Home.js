@@ -14,7 +14,12 @@ import Container from '@mui/material/Container';
 import Link from '@mui/material/Link';
 import Paper from '@mui/material/Paper';
 import IconButton from '@mui/material/IconButton';
+
 import Image from "../assets/img.webp";
+import Icon from "../assets/icon.png";
+import Insta1 from "../assets/IMG_2228.jpg";
+import Insta2 from "../assets/IMG_2229.jpg";
+import Insta3 from "../assets/IMG_2230.jpg";
 
 const styles = {
   paperTopImage: {
@@ -24,11 +29,11 @@ const styles = {
     backgroundColor: '#000000',
     backgroundSize: 'cover',
     backgroundPosition: 'center',
-    height: 500,
+    height: 600,
     width: '100%'
   },
   paperTopText: {
-    height: 500,
+    height: 600,
     width: '100%',
     transform: 'translateY(-60%)',
     background: 'transparent'
@@ -52,32 +57,45 @@ function Header() {
   return (
     <Toolbar>
       <Grid container justifyContent="center" alignItems="center">
-        <Grid item justifyContent="center" alignItems="center" xs={6}>
-          <Typography variant="h4" color="inherit" noWrap>
-            Cleats4Athletes
-          </Typography>
+        <Grid item justifyContent="center" alignItems="center" xs={4}>
+          <Card sx={{bgcolor: 'transparent'}}>
+            <CardMedia
+              component="img"
+              image={Icon}
+              sx={{
+                height: 100,
+                width: 100,
+              }}>
+            </CardMedia>
+          </Card>
         </Grid>
-        <Grid item justifyContent="center" alignItems="center" xs={6}>
-          <Grid disableGutters container justifyContent="center" alignItems="center">
+        <Grid item justifyContent="center" alignItems="center" xs={8}>
+          <Grid container spacing={1} justifyContent="center" alignItems="center">
             <Grid item>
-              <Button variant="text" color="inherit">
+              <Button size='large' variant="text" color="inherit">
+                Mission
+              </Button>
+            </Grid>
+            <Grid item>
+              <Button size='large' variant="text" color="inherit">
+                Events
+              </Button>
+            </Grid>
+            <Grid item>
+              <Button size='large' variant="text" color="inherit">
+                Team
+              </Button>
+            </Grid>
+            <Grid item>
+              <Button size='large' variant="text" color="inherit">
                 Donate Now!
               </Button>
             </Grid>
             <Grid item>
-              <Button variant="text" color="inherit">
-                Events
+              <Button size='large' variant="text" color="inherit">
+                Contact Us
               </Button>
             </Grid>
-            <Grid item></Grid>
-            <Button variant="text" color="inherit">
-              Mission
-            </Button>
-          </Grid>
-          <Grid item>
-            <Button variant="text" color="inherit">
-              Contact Us
-            </Button>
           </Grid>
         </Grid>
       </Grid>
@@ -87,8 +105,8 @@ function Header() {
 
 function TitleImage() {
   return (
-    <Grid container justifyContent="center" alignItems="center" sx={{ backgroundColor: '#000000', height: 500, flex: 1 }}>
-      <Paper style={styles.paperTopImage} />
+    <Grid container justifyContent="center" alignItems="center" sx={{ backgroundColor: '#000000', height: 600, flex: 1 }}>
+      <Paper style={styles.paperTopImage} elevation={0}/>
       <Paper style={styles.paperTopText} elevation={0}>
         <Typography
           variant="h2"
@@ -111,6 +129,84 @@ function TitleImage() {
   );
 }
 
+function InstaImages() {
+  return (
+    <Container sx={{ py: 8 }} maxWidth="md">
+      <Grid container spacing={4}>    
+        <Grid item xs={12} sm={6} md={4}>
+          <Card
+            sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
+          >
+            <CardMedia
+              component="img"
+              image={Insta1}
+              alt="random"
+            />
+            <CardContent sx={{ flexGrow: 1 }}>
+              <Typography gutterBottom variant="h5" component="h2">
+                Heading
+              </Typography>
+              <Typography>
+                This is a media card. You can use this section to describe the
+                content.
+              </Typography>
+            </CardContent>
+            <CardActions>
+              <Button size="small">Go to post</Button>
+            </CardActions>
+          </Card>
+        </Grid>
+        <Grid item xs={12} sm={6} md={4}>
+          <Card
+            sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
+          >
+            <CardMedia
+              component="img"
+              image={Insta2}
+              alt="random"
+            />
+            <CardContent sx={{ flexGrow: 1 }}>
+              <Typography gutterBottom variant="h5" component="h2">
+                Heading
+              </Typography>
+              <Typography>
+                This is a media card. You can use this section to describe the
+                content.
+              </Typography>
+            </CardContent>
+            <CardActions>
+              <Button size="small">Go to post</Button>
+            </CardActions>
+          </Card>
+        </Grid>
+        <Grid item xs={12} sm={6} md={4}>
+          <Card
+            sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
+          >
+            <CardMedia
+              component="img"
+              image={Insta3}
+              alt="random"
+            />
+            <CardContent sx={{ flexGrow: 1 }}>
+              <Typography gutterBottom variant="h5" component="h2">
+                Heading
+              </Typography>
+              <Typography>
+                This is a media card. You can use this section to describe the
+                content.
+              </Typography>
+            </CardContent>
+            <CardActions>
+              <Button size="small">Go to post</Button>
+            </CardActions>
+          </Card>
+        </Grid>
+      </Grid>
+    </Container>
+  )
+}
+
 function Footer() {
   return (
     <Box sx={{ bgcolor: '#EDAFB8', p: 6, pb: 2 }} component="footer">
@@ -128,50 +224,16 @@ function Footer() {
   );
 }
 
-const cards = [1, 2, 3];
-
-
 export default function Home() {
   return (
     <>
-      <AppBar position="relative" sx={{ py: 2 }}>
+      <AppBar position="sticky" sx={{ py: 2 }}>
         <Header />
       </AppBar>
       <main>
         <TitleImage />
-        <Container sx={{ py: 8 }} maxWidth="md">
-          {/* End hero unit */}
-          <Grid container spacing={4}>
-            {cards.map((card) => (
-              <Grid item key={card} xs={12} sm={6} md={4}>
-                <Card
-                  sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
-                >
-                  <CardMedia
-                    component="img"
-                    image="https://source.unsplash.com/random"
-                    alt="random"
-                  />
-                  <CardContent sx={{ flexGrow: 1 }}>
-                    <Typography gutterBottom variant="h5" component="h2">
-                      Heading
-                    </Typography>
-                    <Typography>
-                      This is a media card. You can use this section to describe the
-                      content.
-                    </Typography>
-                  </CardContent>
-                  <CardActions>
-                    <Button size="small">View</Button>
-                    <Button size="small">Edit</Button>
-                  </CardActions>
-                </Card>
-              </Grid>
-            ))}
-          </Grid>
-        </Container>
+        <InstaImages />
       </main>
-      {/* Footer */}
       <Footer />
     </>
   );
