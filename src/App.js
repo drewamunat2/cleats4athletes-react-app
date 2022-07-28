@@ -1,5 +1,9 @@
-import Home from "./Components/Home";
+import Home from "./components/Home";
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { useEffect } from "react";
+
+import Footer from "./components/Footer";
+import Header from "./components/Header";
 
 const theme = createTheme({
   palette: {
@@ -74,9 +78,18 @@ const theme = createTheme({
 });
 
 function App() {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
+
   return (
     <ThemeProvider theme={theme}>
-      <Home />
+      <Header />
+      <main>
+        <Home />
+      </main>
+      <Footer />
     </ThemeProvider>
   );
 }
