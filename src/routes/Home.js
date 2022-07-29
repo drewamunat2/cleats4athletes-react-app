@@ -58,7 +58,7 @@ function Count() {
     <>
       {/* mobile */}
       <Grid container justifyContent="center" alignItems="center" sx={{ backgroundColor: '#000000', height: 100, display: { xs: 'flex', sm: 'none' } }}>
-        <Grid item xs={12} sm={6}>
+        <Grid item xs={12} sm={6} sx={{border: '4px solid blue'}}>
           <Typography
             variant="h6"
             color="#79ADDC"
@@ -68,7 +68,7 @@ function Count() {
             Founded in: December 2020
           </Typography>
         </Grid>
-        <Grid item xs={12} sm={6}>
+        <Grid item xs={12} sm={6} sx={{border: '4px solid blue'}}>
           <Typography
             variant="h6"
             color="#79ADDC"
@@ -81,7 +81,7 @@ function Count() {
       </Grid>
       {/* laptop */}
       <Grid container justifyContent="center" alignItems="center" sx={{ backgroundColor: '#000000', height: 200, display: { xs: 'none', sm: 'flex' } }}>
-        <Grid item sm={6}>
+        <Grid item sm={6} sx={{border: '4px solid blue'}}>
           <Typography
             variant="h4"
             color="#79ADDC"
@@ -91,7 +91,7 @@ function Count() {
             Founded in: December 2020
           </Typography>
         </Grid>
-        <Grid item sm={6}>
+        <Grid item sm={6} sx={{border: '4px solid blue'}}>
           <Typography
             variant="h4"
             color="#79ADDC"
@@ -109,9 +109,9 @@ function Count() {
 function InstaImages() {
   return (
     <Box sx={{ bgcolor: '#ffffff' }}>
-      <Container disableGutters sx={{ py: 4 }}>
+      <Container disableGutters sx={{ py: 3 }}>
         <Grid container>
-          <Grid item xs={12} sm={6} md={3} sx={{ py: 4 }}>
+          <Grid item xs={12} sm={6} md={3} sx={{ py: 3 }}>
             <Card
               sx={{ height: '100%', display: 'flex', flexDirection: 'column', mx: 2 }}
             >
@@ -122,7 +122,7 @@ function InstaImages() {
               />
               <CardContent sx={{ flexGrow: 1 }}>
                 <Typography>
-                  Our first drop off of items to the  Police Athletic League hoping to make a difference.
+                  Our first drop off of items to the Police Athletic League hoping to make a difference.
                 </Typography>
               </CardContent>
               <CardActions>
@@ -130,7 +130,7 @@ function InstaImages() {
               </CardActions>
             </Card>
           </Grid>
-          <Grid item xs={12} sm={6} md={3} sx={{ py: 4 }}>
+          <Grid item xs={12} sm={6} md={3} sx={{ py: 3 }}>
             <Card
               sx={{ height: '100%', display: 'flex', flexDirection: 'column', mx: 2 }}
             >
@@ -148,7 +148,7 @@ function InstaImages() {
               </CardActions>
             </Card>
           </Grid>
-          <Grid item xs={12} sm={6} md={3} sx={{ py: 4 }}>
+          <Grid item xs={12} sm={6} md={3} sx={{ py: 3 }}>
             <Card
               sx={{ height: '100%', display: 'flex', flexDirection: 'column', mx: 2 }}
             >
@@ -159,7 +159,7 @@ function InstaImages() {
               />
               <CardContent sx={{ flexGrow: 1 }}>
                 <Typography>
-                  {"We’ve collected almost 50 items in one week! Extrememly grateful for all the support."}
+                  {"We’ve collected almost 50 items in one week! Extremely grateful for all the support."}
                 </Typography>
               </CardContent>
               <CardActions>
@@ -167,9 +167,9 @@ function InstaImages() {
               </CardActions>
             </Card>
           </Grid>
-          <Grid item xs={12} sm={6} md={3} sx={{ py: 4 }}>
+          <Grid item xs={12} sm={6} md={3} sx={{ py: 3 }}>
             <Card
-              sx={{ height: '100%', display: 'flex', flexDirection: 'column', mx: 2 }}
+              sx={{ height: '100%', display: 'flex', flexDirection: 'column', mx: 1.8 }}
             >
               <CardMedia
                 component="img"
@@ -178,7 +178,7 @@ function InstaImages() {
               />
               <CardContent sx={{ flexGrow: 1 }}>
                 <Typography>
-                  Another successful pickup. We will drop them off at the Police Athletic League this week.
+                  Another successful dropoff just in time for football season last year
                 </Typography>
               </CardContent>
               <CardActions>
