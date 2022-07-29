@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Box, Button, Card, CardActions, CardContent, CardMedia, Grid, Typography, Container, Paper} from '@mui/material';
+import { Box, Button, Card, CardActions, CardContent, CardMedia, Grid, Typography, Container, Paper } from '@mui/material';
 
 import Image from "../assets/img.webp";
 import Insta4 from "../assets/IMG_2228.jpg";
@@ -53,14 +53,67 @@ function TitleImage() {
   );
 }
 
+function Count() {
+  return (
+    <>
+      {/* mobile */}
+      <Grid container justifyContent="center" alignItems="center" sx={{ backgroundColor: '#000000', height: 100, display: { xs: 'flex', sm: 'none' } }}>
+        <Grid item xs={12} sm={6}>
+          <Typography
+            variant="h6"
+            color="#79ADDC"
+            display="block"
+            align="center"
+          >
+            Founded in: December 2020
+          </Typography>
+        </Grid>
+        <Grid item xs={12} sm={6}>
+          <Typography
+            variant="h6"
+            color="#79ADDC"
+            display="block"
+            align="center"
+          >
+            Total Number of Items Collected: 372
+          </Typography>
+        </Grid>
+      </Grid>
+      {/* laptop */}
+      <Grid container justifyContent="center" alignItems="center" sx={{ backgroundColor: '#000000', height: 200, display: { xs: 'none', sm: 'flex' } }}>
+        <Grid item sm={6}>
+          <Typography
+            variant="h4"
+            color="#79ADDC"
+            display="block"
+            align="center"
+          >
+            Founded in: December 2020
+          </Typography>
+        </Grid>
+        <Grid item sm={6}>
+          <Typography
+            variant="h4"
+            color="#79ADDC"
+            display="block"
+            align="center"
+          >
+            Total Number of Items Collected: 372
+          </Typography>
+        </Grid>
+      </Grid>
+    </>
+  );
+}
+
 function InstaImages() {
   return (
-    <Box sx={{bgcolor:'#ffffff'}}>
+    <Box sx={{ bgcolor: '#ffffff' }}>
       <Container disableGutters sx={{ py: 4 }}>
         <Grid container>
           <Grid item xs={12} sm={6} md={3} sx={{ py: 4 }}>
             <Card
-              sx={{ height: '100%', display: 'flex', flexDirection: 'column', mx:2 }}
+              sx={{ height: '100%', display: 'flex', flexDirection: 'column', mx: 2 }}
             >
               <CardMedia
                 component="img"
@@ -79,7 +132,7 @@ function InstaImages() {
           </Grid>
           <Grid item xs={12} sm={6} md={3} sx={{ py: 4 }}>
             <Card
-              sx={{ height: '100%', display: 'flex', flexDirection: 'column', mx:2 }}
+              sx={{ height: '100%', display: 'flex', flexDirection: 'column', mx: 2 }}
             >
               <CardMedia
                 component="img"
@@ -97,7 +150,7 @@ function InstaImages() {
           </Grid>
           <Grid item xs={12} sm={6} md={3} sx={{ py: 4 }}>
             <Card
-              sx={{ height: '100%', display: 'flex', flexDirection: 'column', mx:2 }}
+              sx={{ height: '100%', display: 'flex', flexDirection: 'column', mx: 2 }}
             >
               <CardMedia
                 component="img"
@@ -116,7 +169,7 @@ function InstaImages() {
           </Grid>
           <Grid item xs={12} sm={6} md={3} sx={{ py: 4 }}>
             <Card
-              sx={{ height: '100%', display: 'flex', flexDirection: 'column', mx:2 }}
+              sx={{ height: '100%', display: 'flex', flexDirection: 'column', mx: 2 }}
             >
               <CardMedia
                 component="img"
@@ -143,6 +196,7 @@ export default function Home() {
   return (
     <>
       <TitleImage />
+      <Count />
       <InstaImages />
     </>
   );

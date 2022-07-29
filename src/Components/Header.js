@@ -23,7 +23,7 @@ export default function Header() {
             <Grid container spacing={0} justifyContent="center" alignItems="center" sx={{display: {xs:'flex', md:'none'}}}>
               <Grid item>
                 <Button size='medium' variant="text" color="inherit">
-                  Mission
+                  About
                 </Button>
               </Grid>
               <Grid item>
@@ -51,7 +51,7 @@ export default function Header() {
             <Grid container spacing={4} justifyContent="center" alignItems="center" sx={{display: {xs:'none', md:'flex'}}}>
               <Grid item>
                 <Button size='large' variant="text" color="inherit">
-                  Mission
+                  About
                 </Button>
               </Grid>
               <Grid item>

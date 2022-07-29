@@ -1,9 +1,9 @@
-import Home from "./components/Home";
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { useEffect } from "react";
 
 import Footer from "./components/Footer";
 import Header from "./components/Header";
+import Home from "./routes/Home";
 
 const theme = createTheme({
   palette: {
