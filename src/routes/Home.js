@@ -7,7 +7,6 @@ import Insta3 from "../assets/IMG_2229.jpg";
 import Insta2 from "../assets/IMG_2230.jpg";
 import Insta1 from "../assets/IMG_2234.jpg";
 
-
 const styles = {
   paperTopImage: {
     backgroundImage: `url(${Image})`,
@@ -58,7 +57,7 @@ function Count() {
     <>
       {/* mobile */}
       <Grid container justifyContent="center" alignItems="center" sx={{ backgroundColor: '#000000', height: 100, display: { xs: 'flex', sm: 'none' } }}>
-        <Grid item xs={12} sm={6} sx={{border: '4px solid blue'}}>
+        <Grid item xs={12} sm={6} sx={{border: '4px solid #79ADDC'}}>
           <Typography
             variant="h6"
             color="#79ADDC"
@@ -68,7 +67,7 @@ function Count() {
             Founded in: December 2020
           </Typography>
         </Grid>
-        <Grid item xs={12} sm={6} sx={{border: '4px solid blue'}}>
+        <Grid item xs={12} sm={6} sx={{border: '4px solid #79ADDC'}}>
           <Typography
             variant="h6"
             color="#79ADDC"
@@ -80,27 +79,27 @@ function Count() {
         </Grid>
       </Grid>
       {/* laptop */}
-      <Grid container justifyContent="center" alignItems="center" sx={{ backgroundColor: '#000000', height: 200, display: { xs: 'none', sm: 'flex' } }}>
-        <Grid item sm={6} sx={{border: '4px solid blue'}}>
-          <Typography
-            variant="h4"
-            color="#79ADDC"
-            display="block"
-            align="center"
-          >
-            Founded in: December 2020
-          </Typography>
-        </Grid>
-        <Grid item sm={6} sx={{border: '4px solid blue'}}>
-          <Typography
-            variant="h4"
-            color="#79ADDC"
-            display="block"
-            align="center"
-          >
-            Total Number of Items Collected: 372
-          </Typography>
-        </Grid>
+      <Grid container justifyContent="center" alignItems="center" sx={{ backgroundColor: '#000000', height: 175, display: { xs: 'none', sm: 'flex' }}}>
+          <Grid item sm={6}>
+            <Typography
+              variant="h4"
+              color="#79ADDC"
+              display="block"
+              align="center"
+            >
+              Founded in: December 2020
+            </Typography>
+          </Grid>
+          <Grid item sm={6}>
+            <Typography
+              variant="h4"
+              color="#79ADDC"
+              display="block"
+              align="center"
+            >
+              Total Number of Items Collected: 372
+            </Typography>
+          </Grid>
       </Grid>
     </>
   );
@@ -193,6 +192,7 @@ function InstaImages() {
 }
 
 export default function Home() {
+
   return (
     <>
       <TitleImage />

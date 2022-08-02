@@ -3,7 +3,7 @@ import { useEffect } from "react";
 
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-import Home from "./routes/Home";
+import RouteComponent from './RouteComponent';
 
 const theme = createTheme({
   palette: {
@@ -81,14 +81,12 @@ function App() {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-  });
+  }, []);
 
   return (
     <ThemeProvider theme={theme}>
       <Header />
-      <main>
-        <Home />
-      </main>
+      <RouteComponent />
       <Footer />
     </ThemeProvider>
   );
