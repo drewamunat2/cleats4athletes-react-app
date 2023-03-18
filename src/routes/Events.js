@@ -69,7 +69,7 @@ export default function Events() {
             <Typography
                 align="center"
                 color="#1F78C6"
-                variant="h2"
+                variant="h4"
                 display="block"
                 style={titleStyle}
               >

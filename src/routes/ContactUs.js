@@ -1,4 +1,11 @@
-import { Box, Grid, Paper, Typography, useMediaQuery, Link } from "@mui/material";
+import {
+  Box,
+  Grid,
+  Paper,
+  Typography,
+  useMediaQuery,
+  Link,
+} from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 
 const paperStyle = {
@@ -46,26 +53,26 @@ export default function ContactUs() {
           <Grid item xs={12} sm={6}>
             <Paper elevation={0} square={true} style={paperStyle}>
               <Link href="callto:954-665-3765">
-              <Typography
-                align="center"
-                color="#1F78C6"
-                variant="h3"
-                display="block"
-                style={titleStyle}
-              >
-                Cell: +1 (954)-665-3765
-              </Typography>
+                <Typography
+                  align="center"
+                  color="#1F78C6"
+                  variant="h3"
+                  display="block"
+                  style={titleStyle}
+                >
+                  Cell: +1 (954)-665-3765
+                </Typography>
               </Link>
-              <Link href="mailto:3boyzmommategui@bellsouth.net">
-              <Typography
-                align="center"
-                color="#1F78C6"
-                variant="h3"
-                display="block"
-                style={titleStyle}
-              >
-                Email: 3boyzmommategui@bellsouth.net
-              </Typography>
+              <Link href="mailto:Cleats4Athletes@yahoo.com">
+                <Typography
+                  align="center"
+                  color="#1F78C6"
+                  variant="h3"
+                  display="block"
+                  style={titleStyle}
+                >
+                  Email: Cleats4Athletes@yahoo.com
+                </Typography>
               </Link>
             </Paper>
           </Grid>
@@ -79,15 +86,28 @@ export default function ContactUs() {
         <Grid container style={containerStyle}>
           <Grid item xs={12} sm={6}>
             <Paper elevation={0} square={true} style={paperStyleMobile}>
-            <Typography
-                align="center"
-                color="#1F78C6"
-                variant="h2"
-                display="block"
-                style={titleStyle}
-              >
-                No events yet. Check back soon!
-              </Typography>
+              <Link href="callto:954-665-3765">
+                <Typography
+                  align="center"
+                  color="#1F78C6"
+                  variant="h6"
+                  display="block"
+                  style={titleStyle}
+                >
+                  Cell: +1 (954)-665-3765
+                </Typography>
+              </Link>
+              <Link href="mailto:Cleats4Athletes@yahoo.com">
+                <Typography
+                  align="center"
+                  color="#1F78C6"
+                  variant="h6"
+                  display="block"
+                  style={titleStyle}
+                >
+                  Email: Cleats4Athletes@yahoo.com
+                </Typography>
+              </Link>
             </Paper>
           </Grid>
         </Grid>
