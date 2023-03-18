@@ -12,3 +12,8 @@ html, body {
 body::backdrop {
   background-color: #79ADDC;
 }
+
+img {
+  width: 80%;
+  height: 100%;
+}
