@@ -1,8 +1,8 @@
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { useEffect } from "react";
 
-import Footer from "./components/Footer";
-import Header from "./components/Header";
+import Footer from "./Components/Footer";
+import Header from "./Components/Header";
 import RouteComponent from './RouteComponent';
 
 const theme = createTheme({

@@ -2,6 +2,9 @@ import React from "react";
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import Home from './routes/Home';
 import About from './routes/About';
+import Events from "./routes/Events";
+import Team from "./routes/Team";
+import ContactUs from "./routes/ContactUs";
 
 export default function RouteComponent(){
   return (
@@ -9,6 +12,9 @@ export default function RouteComponent(){
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/events" element={<Events />} />
+          <Route path="/team" element={<Team />} />
+          <Route path="/contact" element={<ContactUs />} />
         </Routes>
     </Router>
   )

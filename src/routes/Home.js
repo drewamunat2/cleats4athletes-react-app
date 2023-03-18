@@ -74,7 +74,7 @@ function Count() {
             display="block"
             align="center"
           >
-            Total Number of Items Collected: 372
+            Total Number of Items Collected: 434
           </Typography>
         </Grid>
       </Grid>

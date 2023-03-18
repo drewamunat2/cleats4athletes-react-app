@@ -29,22 +29,17 @@ export default function Header() {
                 </Button>
               </Grid>
               <Grid item>
-                <Button size='medium' variant="text" color="inherit">
+                <Button size='medium' variant="text" color="inherit" href='/events'>
                   Events
                 </Button>
               </Grid>
               <Grid item>
-                <Button size='medium' variant="text" color="inherit">
+                <Button size='medium' variant="text" color="inherit" href="/team">
                   Team
                 </Button>
               </Grid>
               <Grid item>
-                <Button size='medium' variant="text" color="inherit">
-                  Donate Now!
-                </Button>
-              </Grid>
-              <Grid item>
-                <Button size='medium' variant="text" color="inherit">
+                <Button size='medium' variant="text" color="inherit" href="/contact">
                   Contact Us
                 </Button>
               </Grid>
@@ -57,22 +52,17 @@ export default function Header() {
                 </Button>
               </Grid>
               <Grid item>
-                <Button size='large' variant="text" color="inherit">
+                <Button size='large' variant="text" color="inherit" href='/events'>
                   Events
                 </Button>
               </Grid>
               <Grid item>
-                <Button size='large' variant="text" color="inherit">
+                <Button size='large' variant="text" color="inherit" href="/team">
                   Team
                 </Button>
               </Grid>
               <Grid item>
-                <Button size='large' variant="text" color="inherit">
-                  Donate Now!
-                </Button>
-              </Grid>
-              <Grid item>
-                <Button size='large' variant="text" color="inherit">
+                <Button size='large' variant="text" color="inherit" href="/contact">
                   Contact Us
                 </Button>
               </Grid>
