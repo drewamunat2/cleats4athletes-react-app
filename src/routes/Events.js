@@ -32,7 +32,15 @@ const containerStyle = {
 
 const titleStyle = {
   marginTop: 50,
-  marginBottom: "10%",
+  marginBottom: 30
+};
+
+const subTitleStyle = {
+  marginTop: 20,
+};
+
+const addyTitleStyle = {
+  marginTop: 20,
 };
 
 export default function Events() {
@@ -52,7 +60,34 @@ export default function Events() {
                 display="block"
                 style={titleStyle}
               >
-                No events yet. Check back soon!
+                Cleats and Sneaker Drive
+              </Typography>
+              <Typography
+                align="center"
+                color="#1F78C6"
+                variant="h3"
+                display="block"
+                style={subTitleStyle}
+              >
+                Pine Crest School
+              </Typography>
+              <Typography
+                align="center"
+                color="#1F78C6"
+                variant="h6"
+                display="block"
+                style={addyTitleStyle}
+              >
+                Fort Lauderdale, Florida
+              </Typography>
+              <Typography
+                align="center"
+                color="#1F78C6"
+                variant="h4"
+                display="block"
+                style={subTitleStyle}
+              >
+                November 7th - 9th
               </Typography>
             </Paper>
           </Grid>
@@ -66,14 +101,41 @@ export default function Events() {
         <Grid container style={containerStyle}>
           <Grid item xs={12} sm={6}>
             <Paper elevation={0} square={true} style={paperStyleMobile}>
-            <Typography
+              <Typography
+                align="center"
+                color="#1F78C6"
+                variant="h2"
+                display="block"
+                style={titleStyle}
+              >
+                Cleats and Sneaker Drive
+              </Typography>
+              <Typography
+                align="center"
+                color="#1F78C6"
+                variant="h3"
+                display="block"
+                style={subTitleStyle}
+              >
+                Pine Crest School
+              </Typography>
+              <Typography
+                align="center"
+                color="#1F78C6"
+                variant="h6"
+                display="block"
+                style={addyTitleStyle}
+              >
+                Fort Lauderdale, Florida
+              </Typography>
+              <Typography
                 align="center"
                 color="#1F78C6"
                 variant="h4"
                 display="block"
-                style={titleStyle}
+                style={subTitleStyle}
               >
-                No events yet. Check back soon!
+                November 7th - 9th
               </Typography>
             </Paper>
           </Grid>

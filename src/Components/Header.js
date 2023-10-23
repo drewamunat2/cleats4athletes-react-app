@@ -43,6 +43,11 @@ export default function Header() {
                   Contact Us
                 </Button>
               </Grid>
+              <Grid item>
+                <Button size='medium' variant="text" color="inherit" href="/donate">
+                  Donate Now
+                </Button>
+              </Grid>
             </Grid>
             {/*laptop*/}
             <Grid container spacing={4} justifyContent="center" alignItems="center" sx={{display: {xs:'none', md:'flex'}}}>
@@ -64,6 +69,11 @@ export default function Header() {
               <Grid item>
                 <Button size='large' variant="text" color="inherit" href="/contact">
                   Contact Us
+                </Button>
+              </Grid>
+              <Grid item>
+                <Button size='large' variant="text" color="inherit" href="/donate">
+                  Donate Now
                 </Button>
               </Grid>
             </Grid>

@@ -57,7 +57,7 @@ function Count() {
     <>
       {/* mobile */}
       <Grid container justifyContent="center" alignItems="center" sx={{ backgroundColor: '#000000', height: 100, display: { xs: 'flex', sm: 'none' } }}>
-        <Grid item xs={12} sm={6} sx={{border: '4px solid #79ADDC'}}>
+        <Grid item xs={12} sm={4} sx={{border: '4px solid #79ADDC'}}>
           <Typography
             variant="h6"
             color="#79ADDC"
@@ -67,22 +67,32 @@ function Count() {
             Founded in: December 2020
           </Typography>
         </Grid>
-        <Grid item xs={12} sm={6} sx={{border: '4px solid #79ADDC'}}>
+        <Grid item xs={12} sm={4} sx={{border: '4px solid #79ADDC'}}>
           <Typography
             variant="h6"
             color="#79ADDC"
             display="block"
             align="center"
           >
-            Total Number of Items Collected: 434
+            Total number of items collected: 580
+          </Typography>
+        </Grid>
+        <Grid item xs={12} sm={4} sx={{border: '4px solid #79ADDC'}}>
+          <Typography
+            variant="h6"
+            color="#79ADDC"
+            display="block"
+            align="center"
+          >
+            Total monetary donations: $2000
           </Typography>
         </Grid>
       </Grid>
       {/* laptop */}
-      <Grid container justifyContent="center" alignItems="center" sx={{ backgroundColor: '#000000', height: 175, display: { xs: 'none', sm: 'flex' }}}>
-          <Grid item sm={6}>
+      <Grid container justifyContent="center" alignItems="center" sx={{ backgroundColor: '#000000', height: 150, display: { xs: 'none', sm: 'flex' }}}>
+          <Grid item sm={4}>
             <Typography
-              variant="h4"
+              variant="h6"
               color="#79ADDC"
               display="block"
               align="center"
@@ -90,14 +100,24 @@ function Count() {
               Founded in: December 2020
             </Typography>
           </Grid>
-          <Grid item sm={6}>
+          <Grid item sm={4}>
             <Typography
-              variant="h4"
+              variant="h6"
               color="#79ADDC"
               display="block"
               align="center"
             >
-              Total Number of Items Collected: 372
+              Total number of items collected: 580
+            </Typography>
+          </Grid>
+          <Grid item sm={4}>
+            <Typography
+              variant="h6"
+              color="#79ADDC"
+              display="block"
+              align="center"
+            >
+              Total monetary donations: $2000
             </Typography>
           </Grid>
       </Grid>

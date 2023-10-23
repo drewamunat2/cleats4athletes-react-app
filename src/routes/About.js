@@ -7,10 +7,22 @@ const paperStyle = {
   alignItems: "center",
   textAlign: "center",
   verticalAlign: "middle",
-  backgroundColor: '#000000',
+  backgroundColor: '#FFFFFF',
   height: 700,
   margin: 25,
-  border: '4px solid #79ADDC'
+  border: '4px solid #79ADDC',
+  overflowY: 'scroll'
+};
+
+const paperStyleImg = {
+  justifyContent: "center",
+  alignItems: "center",
+  textAlign: "center",
+  verticalAlign: "middle",
+  backgroundColor: '#FFFFFF',
+  height: 700,
+  margin: 25,
+  border: '4px solid #79ADDC',
 };
 
 const paperStyleMobile = {
@@ -18,7 +30,7 @@ const paperStyleMobile = {
   alignItems: "center",
   textAlign: "center",
   verticalAlign: "middle",
-  backgroundColor: '#000000',
+  backgroundColor: '#FFFFFF',
   margin: 25,
   border: '4px solid #79ADDC'
 };
@@ -28,12 +40,11 @@ const containerStyle = {
   alignItems: "center",
   textAlign: "center",
   verticalAlign: "middle",
-  flex: 1
+  flex: 1,
 };
 
 const titleStyle = {
-  marginTop: 50,
-  marginBottom: '10%',
+  marginTop: 20,
 };
 
 const missionStyle = {
@@ -42,13 +53,18 @@ const missionStyle = {
   marginBottom: '10%',
 };
 
+const subTitleStyle = {
+  marginLeft: '10%',
+  marginRight: '10%',
+};
+
 export default function About() {
   const theme = useTheme();
   const mobile = useMediaQuery(theme.breakpoints.down('sm'));
   if (!mobile) {
     //laptop
     return (
-      <Box sx={{ bgcolor: "black", height: 750, minWidth: 1071 }}>
+      <Box sx={{ bgcolor: "white", height: 750, minWidth: 1071 }}>
         <Grid container style={containerStyle}>
           <Grid item xs={12} sm={6}>
             <Paper
@@ -56,16 +72,52 @@ export default function About() {
               square={true}
               style={paperStyle}>
               <Typography align="center" color="#1F78C6" variant="h2" display="block" style={titleStyle}>
-                Our Mission
+                Cleats4Athletes
               </Typography>
-              <Typography align="center" color="#ffffff" variant="h6" display="block" style={missionStyle}>
-                Our mission is to provide gently used cleats, clothing, and equipment to youth in the Community, so they can engage in sports, which will allow them to develop character, grit, leadership, and other skills needed to help them succeed on the field (court, etc.), in the classroom, and beyond. Please help us by donating items.
+              <Typography align="center" color="#000000" variant="h6" display="block" style={subTitleStyle}>
+                (954)-665-3765             
               </Typography>
-              <Typography align="center" color="#ffffff" variant="h6" display="block" style={missionStyle}>
-                It is easy, just:
-                1. Put the items in a bag by your front door with a note that says cleats for athletes
-                2. Then DM us with your name and address and we will come and pick them up.
-                Thank you. Nick and Matt- Founder and Co-Founder
+              <Typography align="center" color="#000000" variant="h6" display="block" style={subTitleStyle} sx={{mb:5}}>
+                @Cleats4Athletes            
+              </Typography>
+              <Typography align="center" color="#000000" variant="h4" display="block" style={subTitleStyle} sx={{mb:1}}>
+                MISSION
+              </Typography>
+              <Typography align="center" color="#000000" variant="h6" display="block" style={missionStyle} sx={{mb:5}}>
+                The mission of Cleats4Athletes (C4A) is to help underprivileged youth in the community by 
+                providing gently used cleats, clothing, and equipment to facilitate the development of their athletic abilities. 
+                We believe the engagement in sports encourages character, grit, leadership, and other skills needed to help them 
+                succeed on the field (court, etc.) in the classroom and beyond.
+              </Typography>
+              <Typography align="center" color="#000000" variant="h4" display="block" style={subTitleStyle} sx={{mb:1}}>
+                ABOUT
+              </Typography>
+              <Typography align="center" color="#000000" variant="h6" display="block" style={missionStyle}>
+                The mission of Cleats4Athletes (C4A) is to help underprivileged youth in the community by 
+                providing gently used cleats, clothing, and equipment to facilitate the development of their athletic abilities. 
+                We believe the engagement in sports encourages character, grit, leadership, and other skills needed to help them 
+                succeed on the field (court, etc.) in the classroom and beyond.
+              </Typography>
+              <Typography align="center" color="#000000" variant="h4" display="block" style={subTitleStyle} sx={{mb:1}}>
+                DONATIONS and RECIPIANTS
+              </Typography>
+              <Typography align="center" color="#000000" variant="h6" display="block" style={missionStyle}>
+                We have been collecting donations since December 2020. We have since collected approximately 566 items 
+                (approx. value $2279), which includes cleats, sneakers, athletic clothing, athletic equipment, and clothes/shoes. 
+                We have received $2000 from donors which we used to purchase 30 pairs of cleats and sneakers that were donated to 
+                Lee County Sheriff's Youth Activities League (SYAL) who in turn to distributed to kids in regions of the county devastated 
+                by Hurricane Ian.  We have just received a commitment from Skechers for a donation of 25 pairs of sneakers that we will donate 
+                to PAL of Hollywood.
+              </Typography>
+              <Typography align="center" color="#000000" variant="h6" display="block" style={missionStyle}>
+                Donations have been collected from the school community, friends, family, and neighbors.  In addition, we have appointed 
+                Talia Rosenthal as our Community Ambassador to help raise awareness and obtain donations.
+              </Typography>
+              <Typography align="center" color="#000000" variant="h6" display="block" style={missionStyle}>
+                We intend to continue to distribute to the PAL of Hollywood and will continue to serve other communities that are in dire need 
+                of our donations. In the future, we hope to continue to expand to other cities/counties in Florida, and other states.  
+                We are exploring a possible distribution in Bloomington, IN in coordination with Alpha Epsilon Pi Fraternity, of which 
+                Nicolas Amunategui, our Treasurer, is a member.   We would like to reach a goal of donating cleats/sneakers to 1000 kids per year.
               </Typography>
             </Paper>
           </Grid>
@@ -73,7 +125,7 @@ export default function About() {
             <Paper
               elevation={0}
               square={true}
-              style={paperStyle}
+              style={paperStyleImg}
             >
               <img src={img} alt='mission'>
               </img>
@@ -85,24 +137,60 @@ export default function About() {
   } else {
     //mobile
     return (
-      <Box sx={{ bgcolor: "black", minWidth: 360 }}>
+      <Box sx={{ bgcolor: "white", minWidth: 360 }}>
         <Grid container style={containerStyle}>
           <Grid item xs={12} sm={6}>
             <Paper
               elevation={0}
               square={true}
               style={paperStyleMobile}>
-              <Typography align="center" color="#1F78C6" variant="h3" display="block" style={titleStyle}>
-                Our Mission
+              <Typography align="center" color="#1F78C6" variant="h4" display="block" style={titleStyle}>
+                Cleats4Athletes
               </Typography>
-              <Typography align="center" color="#ffffff" display="block" style={missionStyle}>
-                Our mission is to provide gently used cleats, clothing, and equipment to youth in the Community, so they can engage in sports, which will allow them to develop character, grit, leadership, and other skills needed to help them succeed on the field (court, etc.), in the classroom, and beyond. Please help us by donating items.
+              <Typography align="center" color="#000000" variant="h6" display="block" style={subTitleStyle}>
+                (954)-665-3765             
               </Typography>
-              <Typography align="center" color="#ffffff" display="block" style={missionStyle}>
-                It is easy, just:
-                1. Put the items in a bag by your front door with a note that says cleats for athletes
-                2. Then DM us with your name and address and we will come and pick them up.
-                Thank you. Nick and Matt- Founder and Co-Founder
+              <Typography align="center" color="#000000" variant="h6" display="block" style={subTitleStyle} sx={{mb:5}}>
+                @Cleats4Athletes            
+              </Typography>
+              <Typography align="center" color="#000000" variant="h4" display="block" style={subTitleStyle} sx={{mb:1}}>
+                MISSION
+              </Typography>
+              <Typography align="center" color="#000000" variant="h6" display="block" style={missionStyle} sx={{mb:5}}>
+                The mission of Cleats4Athletes (C4A) is to help underprivileged youth in the community by 
+                providing gently used cleats, clothing, and equipment to facilitate the development of their athletic abilities. 
+                We believe the engagement in sports encourages character, grit, leadership, and other skills needed to help them 
+                succeed on the field (court, etc.) in the classroom and beyond.
+              </Typography>
+              <Typography align="center" color="#000000" variant="h4" display="block" style={subTitleStyle} sx={{mb:1}}>
+                ABOUT
+              </Typography>
+              <Typography align="center" color="#000000" variant="h6" display="block" style={missionStyle}>
+                The mission of Cleats4Athletes (C4A) is to help underprivileged youth in the community by 
+                providing gently used cleats, clothing, and equipment to facilitate the development of their athletic abilities. 
+                We believe the engagement in sports encourages character, grit, leadership, and other skills needed to help them 
+                succeed on the field (court, etc.) in the classroom and beyond.
+              </Typography>
+              <Typography align="center" color="#000000" variant="h4" display="block" style={subTitleStyle} sx={{mb:1}}>
+                DONATIONS and RECIPIANTS
+              </Typography>
+              <Typography align="center" color="#000000" variant="h6" display="block" style={missionStyle}>
+                We have been collecting donations since December 2020. We have since collected approximately 566 items 
+                (approx. value $2279), which includes cleats, sneakers, athletic clothing, athletic equipment, and clothes/shoes. 
+                We have received $2000 from donors which we used to purchase 30 pairs of cleats and sneakers that were donated to 
+                Lee County Sheriff's Youth Activities League (SYAL) who in turn to distributed to kids in regions of the county devastated 
+                by Hurricane Ian.  We have just received a commitment from Skechers for a donation of 25 pairs of sneakers that we will donate 
+                to PAL of Hollywood.
+              </Typography>
+              <Typography align="center" color="#000000" variant="h6" display="block" style={missionStyle}>
+                Donations have been collected from the school community, friends, family, and neighbors.  In addition, we have appointed 
+                Talia Rosenthal as our Community Ambassador to help raise awareness and obtain donations.
+              </Typography>
+              <Typography align="center" color="#000000" variant="h6" display="block" style={missionStyle}>
+                We intend to continue to distribute to the PAL of Hollywood and will continue to serve other communities that are in dire need 
+                of our donations. In the future, we hope to continue to expand to other cities/counties in Florida, and other states.  
+                We are exploring a possible distribution in Bloomington, IN in coordination with Alpha Epsilon Pi Fraternity, of which 
+                Nicolas Amunategui, our Treasurer, is a member.   We would like to reach a goal of donating cleats/sneakers to 1000 kids per year.
               </Typography>
             </Paper>
           </Grid>
