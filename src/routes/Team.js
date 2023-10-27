@@ -66,7 +66,7 @@ export default function Team() {
           <Grid item xs={12}>
             <Paper elevation={0} square={true} style={paperStyle}>
               <Grid container justify="center" alignItems="center">
-                <Grid item xs={2}></Grid>
+                <Grid item xs={1} />
                 <Grid item xs={5} style={{ textAlign: 'center' }}>
                   <img src={matt} alt='Matt' style={pictureStyle} />
                 </Grid>
@@ -90,13 +90,14 @@ export default function Team() {
                     CEO, Co-Founder
                   </Typography>
                 </Grid>
+                <Grid item xs={1} />
               </Grid>
             </Paper>
           </Grid>
           <Grid item xs={12}>
             <Paper elevation={0} square={true} style={paperStyle}>
               <Grid container justify="center" alignItems="center">
-                <Grid item xs={2}></Grid>
+                <Grid item xs={1} />
                 <Grid item xs={5} style={{ textAlign: 'center' }}>
                   <img src={mom} alt='Matt' style={pictureStyle} />
                 </Grid>
@@ -120,13 +121,14 @@ export default function Team() {
                     Secretary
                   </Typography>
                 </Grid>
+                <Grid item xs={1} />
               </Grid>
             </Paper>
           </Grid>
           <Grid item xs={12}>
             <Paper elevation={0} square={true} style={paperStyle}>
               <Grid container justify="center" alignItems="center">
-                <Grid item xs={2}></Grid>
+                <Grid item xs={1} />
                 <Grid item xs={5} style={{ textAlign: 'center' }}>
                   <img src={nick} alt='Matt' style={pictureStyle} />
                 </Grid>
@@ -150,13 +152,14 @@ export default function Team() {
                     Treasurer, Co-Founder
                   </Typography>
                 </Grid>
+                <Grid item xs={1} />
               </Grid>
             </Paper>
           </Grid>
           <Grid item xs={12}>
             <Paper elevation={0} square={true} style={paperStyle}>
               <Grid container justify="center" alignItems="center">
-                <Grid item xs={2}></Grid>
+                <Grid item xs={1} />
                 <Grid item xs={5} style={{ textAlign: 'center' }}>
                   <img src={drew} alt='Matt' style={pictureStyle} />
                 </Grid>
@@ -180,6 +183,7 @@ export default function Team() {
                     Lead Software Engineer
                   </Typography>
                 </Grid>
+                <Grid item xs={1} />
               </Grid>
             </Paper>
           </Grid>
