@@ -1,16 +1,25 @@
 import { Box, Grid, Paper, Typography, useMediaQuery } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
-import img from "../assets/IMG_2235.png"
+import drew from "../assets/drew.jpeg"
+import nick from "../assets/nick.jpeg"
+import matt from "../assets/matt.jpeg"
+import mom from "../assets/mom.jpeg"
+
+const pictureStyle = { 
+  width: '75%',
+  height: 500, 
+  display: 'block',
+  borderRadius: '100%',
+}
 
 const paperStyle = {
   justifyContent: "center",
   alignItems: "center",
   textAlign: "center",
   verticalAlign: "middle",
-  backgroundColor: "#000000",
-  height: 300,
+  backgroundColor: "#FFFFFF",
+  height: 500,
   margin: 25,
-  border: "4px solid #79ADDC",
 };
 
 const paperStyleMobile = {
@@ -18,9 +27,8 @@ const paperStyleMobile = {
   alignItems: "center",
   textAlign: "center",
   verticalAlign: "middle",
-  backgroundColor: "#000000",
+  backgroundColor: "#FFFFFF",
   margin: 25,
-  border: "4px solid #79ADDC",
 };
 
 const containerStyle = {
@@ -48,67 +56,126 @@ export default function Team() {
   if (!mobile) {
     //laptop
     return (
-      <Box sx={{ bgcolor: "black", height: 750, minWidth: 1071 }}>
+      <Box sx={{ bgcolor: "white", height: 2200, minWidth: 1071 }}>
         <Grid container style={containerStyle}>
-          <Grid item xs={12} sm={6}>
+          <Grid item xs={12}>
             <Paper elevation={0} square={true} style={paperStyle}>
-              <Grid container>
-                <Grid item xs={6}></Grid>
-                <img src={img} alt='Matt'>
-                </img>
-                <Grid item xs={6}>
+              <Grid container justify="center" alignItems="center">
+                <Grid item xs={2}></Grid>
+                <Grid item xs={5} style={{ textAlign: 'center' }}>
+                  <img src={matt} alt='Matt' style={pictureStyle} />
+                </Grid>
+                <Grid item xs={5} style={{ textAlign: 'center' }}>
                   <Typography
-                    align="center"
+                    align="left"
                     color="#1F78C6"
                     variant="h2"
                     display="block"
                     style={titleStyle}
                   >
-                    Matt
+                    Matthew Amunategui
+                  </Typography>
+                  <Typography
+                    align="left"
+                    color="#1F78C6"
+                    variant="h2"
+                    display="block"
+                    style={titleStyle}
+                  >
+                    CEO, Co-Founder
                   </Typography>
                 </Grid>
               </Grid>
             </Paper>
           </Grid>
-          <Grid item xs={12} sm={6}>
+          <Grid item xs={12}>
             <Paper elevation={0} square={true} style={paperStyle}>
-              <Typography
-                align="center"
-                color="#1F78C6"
-                variant="h2"
-                display="block"
-                style={titleStyle}
-              >
-                Nick
-              </Typography>
+              <Grid container justify="center" alignItems="center">
+                <Grid item xs={2}></Grid>
+                <Grid item xs={5} style={{ textAlign: 'center' }}>
+                  <img src={mom} alt='Matt' style={pictureStyle} />
+                </Grid>
+                <Grid item xs={5} style={{ textAlign: 'center' }}>
+                  <Typography
+                    align="left"
+                    color="#1F78C6"
+                    variant="h2"
+                    display="block"
+                    style={titleStyle}
+                  >
+                    Lee Ann Amunategui
+                  </Typography>
+                  <Typography
+                    align="left"
+                    color="#1F78C6"
+                    variant="h2"
+                    display="block"
+                    style={titleStyle}
+                  >
+                    Secretary
+                  </Typography>
+                </Grid>
+              </Grid>
             </Paper>
           </Grid>
-        </Grid>
-        <Grid container style={containerStyle}>
-          <Grid item xs={12} sm={6}>
+          <Grid item xs={12}>
             <Paper elevation={0} square={true} style={paperStyle}>
-              <Typography
-                align="center"
-                color="#1F78C6"
-                variant="h2"
-                display="block"
-                style={titleStyle}
-              >
-                Mom
-              </Typography>
+              <Grid container justify="center" alignItems="center">
+                <Grid item xs={2}></Grid>
+                <Grid item xs={5} style={{ textAlign: 'center' }}>
+                  <img src={nick} alt='Matt' style={pictureStyle} />
+                </Grid>
+                <Grid item xs={5} style={{ textAlign: 'center' }}>
+                  <Typography
+                    align="left"
+                    color="#1F78C6"
+                    variant="h2"
+                    display="block"
+                    style={titleStyle}
+                  >
+                    Nicolas Amunategui
+                  </Typography>
+                  <Typography
+                    align="left"
+                    color="#1F78C6"
+                    variant="h2"
+                    display="block"
+                    style={titleStyle}
+                  >
+                    Treasurer, Co-Founder
+                  </Typography>
+                </Grid>
+              </Grid>
             </Paper>
           </Grid>
-          <Grid item xs={12} sm={6}>
+          <Grid item xs={12}>
             <Paper elevation={0} square={true} style={paperStyle}>
-              <Typography
-                align="center"
-                color="#1F78C6"
-                variant="h2"
-                display="block"
-                style={titleStyle}
-              >
-                Drew
-              </Typography>
+              <Grid container justify="center" alignItems="center">
+                <Grid item xs={2}></Grid>
+                <Grid item xs={5} style={{ textAlign: 'center' }}>
+                  <img src={drew} alt='Matt' style={pictureStyle} />
+                </Grid>
+                <Grid item xs={5} style={{ textAlign: 'center' }}>
+                  <Typography
+                    align="left"
+                    color="#1F78C6"
+                    variant="h2"
+                    display="block"
+                    style={titleStyle}
+                  >
+                    Drew Amunategui
+                  </Typography>
+                  <Typography
+                    align="left"
+                    color="#1F78C6"
+                    variant="h2"
+                    display="block"
+                    style={titleStyle}
+                  >
+                    Lead Software Engineer
+                  </Typography>
+                </Grid>
+              </Grid>
             </Paper>
           </Grid>
         </Grid>

@@ -93,10 +93,14 @@ export default function About() {
                 ABOUT
               </Typography>
               <Typography align="center" color="#000000" variant="h6" display="block" style={missionStyle}>
-                The mission of Cleats4Athletes (C4A) is to help underprivileged youth in the community by 
-                providing gently used cleats, clothing, and equipment to facilitate the development of their athletic abilities. 
-                We believe the engagement in sports encourages character, grit, leadership, and other skills needed to help them 
-                succeed on the field (court, etc.) in the classroom and beyond.
+                Cleats4Athletes was started in 2020 by two high school athletes who both became aware of how the pandemic 
+                was adversely affecting the ability for underprivileged kids to play sports. Knowing how important sports 
+                can be for kids, they initiated a modest collection of cleats, athletic gear/equipment, and clothing from 
+                friends, family, school, and others to give to the Police Athletic League (PAL) of Hollywood, FL, who then 
+                distributed to the kids.  After introducing the idea to the community service contact at their school, 
+                they realized they could be more effective if they created a Not-for-Profit Corporation.  In late 2022 
+                that dream became a reality. The goal is to encourage monetary donations which will be used for the purchase 
+                of new cleats for underprivileged kids in our community. 
               </Typography>
               <Typography align="center" color="#000000" variant="h4" display="block" style={subTitleStyle} sx={{mb:1}}>
                 DONATIONS and RECIPIANTS
@@ -166,10 +170,14 @@ export default function About() {
                 ABOUT
               </Typography>
               <Typography align="center" color="#000000" variant="h6" display="block" style={missionStyle}>
-                The mission of Cleats4Athletes (C4A) is to help underprivileged youth in the community by 
-                providing gently used cleats, clothing, and equipment to facilitate the development of their athletic abilities. 
-                We believe the engagement in sports encourages character, grit, leadership, and other skills needed to help them 
-                succeed on the field (court, etc.) in the classroom and beyond.
+                Cleats4Athletes was started in 2020 by two high school athletes who both became aware of how the pandemic 
+                was adversely affecting the ability for underprivileged kids to play sports. Knowing how important sports 
+                can be for kids, they initiated a modest collection of cleats, athletic gear/equipment, and clothing from 
+                friends, family, school, and others to give to the Police Athletic League (PAL) of Hollywood, FL, who then 
+                distributed to the kids.  After introducing the idea to the community service contact at their school, 
+                they realized they could be more effective if they created a Not-for-Profit Corporation.  In late 2022 
+                that dream became a reality. The goal is to encourage monetary donations which will be used for the purchase 
+                of new cleats for underprivileged kids in our community. 
               </Typography>
               <Typography align="center" color="#000000" variant="h4" display="block" style={subTitleStyle} sx={{mb:1}}>
                 DONATIONS and RECIPIANTS
