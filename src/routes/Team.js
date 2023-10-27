@@ -157,10 +157,9 @@ export default function Team() {
             <Paper elevation={0} square={true} style={paperStyle}>
               <Grid container justify="center" alignItems="center">
                 <Grid item xs={2}></Grid>
-                <Grid item xs={6} style={{ textAlign: 'center' }}>
+                <Grid item xs={5} style={{ textAlign: 'center' }}>
                   <img src={drew} alt='Matt' style={pictureStyle} />
                 </Grid>
-                <Grid item xs={3} style={{ textAlign: 'center' }}></Grid>
                 <Grid item xs={5} style={{ textAlign: 'center' }}>
                   <Typography
                     align="left"
