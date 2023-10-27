@@ -41,7 +41,10 @@ const containerStyle = {
 
 const titleStyle = {
   marginTop: 50,
-  marginBottom: "10%",
+};
+
+const subTitleStyle = {
+  marginBottom: 50
 };
 
 const missionStyle = {
@@ -78,9 +81,9 @@ export default function Team() {
                   <Typography
                     align="left"
                     color="#1F78C6"
-                    variant="h2"
+                    variant="h6"
                     display="block"
-                    style={titleStyle}
+                    style={subTitleStyle}
                   >
                     CEO, Co-Founder
                   </Typography>
@@ -108,9 +111,9 @@ export default function Team() {
                   <Typography
                     align="left"
                     color="#1F78C6"
-                    variant="h2"
+                    variant="h6"
                     display="block"
-                    style={titleStyle}
+                    style={subTitleStyle}
                   >
                     Secretary
                   </Typography>
@@ -138,9 +141,9 @@ export default function Team() {
                   <Typography
                     align="left"
                     color="#1F78C6"
-                    variant="h2"
+                    variant="h6"
                     display="block"
-                    style={titleStyle}
+                    style={subTitleStyle}
                   >
                     Treasurer, Co-Founder
                   </Typography>
@@ -168,9 +171,9 @@ export default function Team() {
                   <Typography
                     align="left"
                     color="#1F78C6"
-                    variant="h2"
+                    variant="h6"
                     display="block"
-                    style={titleStyle}
+                    style={subTitleStyle}
                   >
                     Lead Software Engineer
                   </Typography>
