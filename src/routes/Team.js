@@ -12,6 +12,13 @@ const pictureStyle = {
   borderRadius: '100%',
 }
 
+const pictureStyleMobile = { 
+  width: '75%',
+  height: 150, 
+  display: 'block',
+  borderRadius: '100%',
+}
+
 const paperStyle = {
   justifyContent: "center",
   alignItems: "center",
@@ -28,7 +35,8 @@ const paperStyleMobile = {
   textAlign: "center",
   verticalAlign: "middle",
   backgroundColor: "#FFFFFF",
-  margin: 25,
+  height: 200,
+  margin: 5,
 };
 
 const containerStyle = {
@@ -45,12 +53,6 @@ const titleStyle = {
 
 const subTitleStyle = {
   marginBottom: 50
-};
-
-const missionStyle = {
-  marginLeft: "10%",
-  marginRight: "10%",
-  marginBottom: "10%",
 };
 
 export default function Team() {
@@ -154,10 +156,11 @@ export default function Team() {
           <Grid item xs={12}>
             <Paper elevation={0} square={true} style={paperStyle}>
               <Grid container justify="center" alignItems="center">
-                <Grid item xs={2}></Grid>
-                <Grid item xs={5} style={{ textAlign: 'center' }}>
+                <Grid item xs={3}></Grid>
+                <Grid item xs={6} style={{ textAlign: 'center' }}>
                   <img src={drew} alt='Matt' style={pictureStyle} />
                 </Grid>
+                <Grid item xs={3} style={{ textAlign: 'center' }}></Grid>
                 <Grid item xs={5} style={{ textAlign: 'center' }}>
                   <Typography
                     align="left"
@@ -187,43 +190,126 @@ export default function Team() {
   } else {
     //mobile
     return (
-      <Box sx={{ bgcolor: "black", minWidth: 360 }}>
+      <Box sx={{ bgcolor: "white", minWidth: 360, height: 900 }}>
         <Grid container style={containerStyle}>
-          <Grid item xs={12} sm={6}>
+          <Grid item xs={12}>
             <Paper elevation={0} square={true} style={paperStyleMobile}>
-              <Typography
-                align="center"
-                color="#1F78C6"
-                variant="h3"
-                display="block"
-                style={titleStyle}
-              >
-                Our Mission
-              </Typography>
-              <Typography
-                align="center"
-                color="#ffffff"
-                display="block"
-                style={missionStyle}
-              >
-                Our mission is to provide gently used cleats, clothing, and
-                equipment to youth in the Community, so they can engage in
-                sports, which will allow them to develop character, grit,
-                leadership, and other skills needed to help them succeed on the
-                field (court, etc.), in the classroom, and beyond. Please help
-                us by donating items.
-              </Typography>
-              <Typography
-                align="center"
-                color="#ffffff"
-                display="block"
-                style={missionStyle}
-              >
-                It is easy, just: 1. Put the items in a bag by your front door
-                with a note that says cleats for athletes 2. Then DM us with
-                your name and address and we will come and pick them up. Thank
-                you. Nick and Matt- Founder and Co-Founder
-              </Typography>
+              <Grid container justify="center" alignItems="center">
+                <Grid item xs={1} />
+                <Grid item xs={5} style={{ textAlign: 'center' }}>
+                  <img src={matt} alt='Matt' style={pictureStyleMobile} />
+                </Grid>
+                <Grid item xs={5} style={{ textAlign: 'center' }}>
+                  <Typography
+                    align="left"
+                    color="#1F78C6"
+                    variant="h4"
+                    display="block"
+                    style={titleStyle}
+                  >
+                    Matthew Amunategui
+                  </Typography>
+                  <Typography
+                    align="left"
+                    color="#1F78C6"
+                    variant="h6"
+                    display="block"
+                    style={subTitleStyle}
+                  >
+                    CEO, Co-Founder
+                  </Typography>
+                </Grid>
+              </Grid>
+            </Paper>
+          </Grid>
+          <Grid item xs={12}>
+            <Paper elevation={0} square={true} style={paperStyleMobile}>
+              <Grid container justify="center" alignItems="center">
+                <Grid item xs={1} />
+                <Grid item xs={5} style={{ textAlign: 'center' }}>
+                  <img src={mom} alt='Matt' style={pictureStyleMobile} />
+                </Grid>
+                <Grid item xs={5} style={{ textAlign: 'center' }}>
+                  <Typography
+                    align="left"
+                    color="#1F78C6"
+                    variant="h4"
+                    display="block"
+                    style={titleStyle}
+                  >
+                    Lee Ann Amunategui
+                  </Typography>
+                  <Typography
+                    align="left"
+                    color="#1F78C6"
+                    variant="h6"
+                    display="block"
+                    style={subTitleStyle}
+                  >
+                    Secretary
+                  </Typography>
+                </Grid>
+              </Grid>
+            </Paper>
+          </Grid>
+          <Grid item xs={12}>
+            <Paper elevation={0} square={true} style={paperStyleMobile}>
+              <Grid container justify="center" alignItems="center">
+                <Grid item xs={1} />
+                <Grid item xs={5} style={{ textAlign: 'center' }}>
+                  <img src={nick} alt='Matt' style={pictureStyleMobile} />
+                </Grid>
+                <Grid item xs={5} style={{ textAlign: 'center' }}>
+                  <Typography
+                    align="left"
+                    color="#1F78C6"
+                    variant="h4"
+                    display="block"
+                    style={titleStyle}
+                  >
+                    Nicolas Amunategui
+                  </Typography>
+                  <Typography
+                    align="left"
+                    color="#1F78C6"
+                    variant="h6"
+                    display="block"
+                    style={subTitleStyle}
+                  >
+                    Treasurer, Co-Founder
+                  </Typography>
+                </Grid>
+              </Grid>
+            </Paper>
+          </Grid>
+          <Grid item xs={12}>
+            <Paper elevation={0} square={true} style={paperStyleMobile}>
+              <Grid container justify="center" alignItems="center">
+                <Grid item xs={1} />
+                <Grid item xs={5} style={{ textAlign: 'center' }}>
+                  <img src={drew} alt='Matt' style={pictureStyleMobile} />
+                </Grid>
+                <Grid item xs={5} style={{ textAlign: 'center' }}>
+                  <Typography
+                    align="left"
+                    color="#1F78C6"
+                    variant="h4"
+                    display="block"
+                    style={titleStyle}
+                  >
+                    Drew Amunategui
+                  </Typography>
+                  <Typography
+                    align="left"
+                    color="#1F78C6"
+                    variant="h6"
+                    display="block"
+                    style={subTitleStyle}
+                  >
+                    Lead Software Engineer
+                  </Typography>
+                </Grid>
+              </Grid>
             </Paper>
           </Grid>
         </Grid>
