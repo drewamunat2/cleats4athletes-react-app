@@ -1,23 +1,23 @@
 import { Box, Grid, Paper, Typography, useMediaQuery } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
-import drew from "../assets/drew.jpeg"
-import nick from "../assets/nick.jpeg"
-import matt from "../assets/matt.jpeg"
-import mom from "../assets/mom.jpeg"
+import drew from "../assets/drew.jpeg";
+import nick from "../assets/nick.jpeg";
+import matt from "../assets/matt.jpeg";
+import mom from "../assets/mom.jpeg";
 
-const pictureStyle = { 
-  width: '75%',
-  height: 500, 
-  display: 'block',
-  borderRadius: '100%',
-}
+const pictureStyle = {
+  width: "75%",
+  height: 500,
+  display: "block",
+  borderRadius: "100%",
+};
 
-const pictureStyleMobile = { 
-  width: '75%',
-  height: 150, 
-  display: 'block',
-  borderRadius: '100%',
-}
+const pictureStyleMobile = {
+  width: "75%",
+  height: 150,
+  display: "block",
+  borderRadius: "100%",
+};
 
 const paperStyle = {
   justifyContent: "center",
@@ -52,7 +52,7 @@ const titleStyle = {
 };
 
 const subTitleStyle = {
-  marginBottom: 50
+  marginBottom: 50,
 };
 
 export default function Team() {
@@ -61,16 +61,16 @@ export default function Team() {
   if (!mobile) {
     //laptop
     return (
-      <Box sx={{ bgcolor: "white", height: 2200, minWidth: 1071 }}>
+      <Box sx={{ bgcolor: '#CDD8E6', height: 2200, minWidth: 1071 }}>
         <Grid container style={containerStyle}>
-          <Grid item xs={12}>
+          <Grid item xs={12} sx={{bgcolor: '#CDD8E6'}}>
             <Paper elevation={0} square={true} style={paperStyle}>
-              <Grid container justify="center" alignItems="center">
+              <Grid container justify="center" alignItems="center" sx={{bgcolor: '#CDD8E6'}}>
                 <Grid item xs={1} />
-                <Grid item xs={5} style={{ textAlign: 'center' }}>
-                  <img src={matt} alt='Matt' style={pictureStyle} />
+                <Grid item xs={5} style={{ textAlign: "center" }}>
+                  <img src={matt} alt="Matt" style={pictureStyle} />
                 </Grid>
-                <Grid item xs={5} style={{ textAlign: 'center' }}>
+                <Grid item xs={5} style={{ textAlign: "center" }}>
                   <Typography
                     align="left"
                     color="#1F78C6"
@@ -94,45 +94,14 @@ export default function Team() {
               </Grid>
             </Paper>
           </Grid>
-          <Grid item xs={12}>
+          <Grid item xs={12} sx={{bgcolor: '#CDD8E6'}}>
             <Paper elevation={0} square={true} style={paperStyle}>
-              <Grid container justify="center" alignItems="center">
+              <Grid container justify="center" alignItems="center" sx={{bgcolor: '#CDD8E6'}}>
                 <Grid item xs={1} />
-                <Grid item xs={5} style={{ textAlign: 'center' }}>
-                  <img src={mom} alt='Matt' style={pictureStyle} />
+                <Grid item xs={5} style={{ textAlign: "center" }}>
+                  <img src={nick} alt="Nick" style={pictureStyle} />
                 </Grid>
-                <Grid item xs={5} style={{ textAlign: 'center' }}>
-                  <Typography
-                    align="left"
-                    color="#1F78C6"
-                    variant="h2"
-                    display="block"
-                    style={titleStyle}
-                  >
-                    Lee Ann Amunategui
-                  </Typography>
-                  <Typography
-                    align="left"
-                    color="#1F78C6"
-                    variant="h6"
-                    display="block"
-                    style={subTitleStyle}
-                  >
-                    Secretary
-                  </Typography>
-                </Grid>
-                <Grid item xs={1} />
-              </Grid>
-            </Paper>
-          </Grid>
-          <Grid item xs={12}>
-            <Paper elevation={0} square={true} style={paperStyle}>
-              <Grid container justify="center" alignItems="center">
-                <Grid item xs={1} />
-                <Grid item xs={5} style={{ textAlign: 'center' }}>
-                  <img src={nick} alt='Matt' style={pictureStyle} />
-                </Grid>
-                <Grid item xs={5} style={{ textAlign: 'center' }}>
+                <Grid item xs={5} style={{ textAlign: "center" }}>
                   <Typography
                     align="left"
                     color="#1F78C6"
@@ -156,14 +125,45 @@ export default function Team() {
               </Grid>
             </Paper>
           </Grid>
-          <Grid item xs={12}>
+          <Grid item xs={12} sx={{bgcolor: '#CDD8E6'}}>
             <Paper elevation={0} square={true} style={paperStyle}>
-              <Grid container justify="center" alignItems="center">
+              <Grid container justify="center" alignItems="center" sx={{bgcolor: '#CDD8E6'}}>
                 <Grid item xs={1} />
-                <Grid item xs={5} style={{ textAlign: 'center' }}>
-                  <img src={drew} alt='Matt' style={pictureStyle} />
+                <Grid item xs={5} style={{ textAlign: "center" }}>
+                  <img src={mom} alt="Lee Ann" style={pictureStyle} />
                 </Grid>
-                <Grid item xs={5} style={{ textAlign: 'center' }}>
+                <Grid item xs={5} style={{ textAlign: "center" }}>
+                  <Typography
+                    align="left"
+                    color="#1F78C6"
+                    variant="h2"
+                    display="block"
+                    style={titleStyle}
+                  >
+                    Lee Ann Amunategui
+                  </Typography>
+                  <Typography
+                    align="left"
+                    color="#1F78C6"
+                    variant="h6"
+                    display="block"
+                    style={subTitleStyle}
+                  >
+                    Secretary
+                  </Typography>
+                </Grid>
+                <Grid item xs={1} />
+              </Grid>
+            </Paper>
+          </Grid>
+          <Grid item xs={12} sx={{bgcolor: '#CDD8E6'}}>
+            <Paper elevation={0} square={true} style={paperStyle}>
+              <Grid container justify="center" alignItems="center" sx={{bgcolor: '#CDD8E6'}}>
+                <Grid item xs={1} />
+                <Grid item xs={5} style={{ textAlign: "center" }}>
+                  <img src={drew} alt="Drew" style={pictureStyle} />
+                </Grid>
+                <Grid item xs={5} style={{ textAlign: "center" }}>
                   <Typography
                     align="left"
                     color="#1F78C6"
@@ -193,16 +193,16 @@ export default function Team() {
   } else {
     //mobile
     return (
-      <Box sx={{ bgcolor: "white", minWidth: 360, height: 900 }}>
+      <Box sx={{ bgcolor: '#CDD8E6', minWidth: 360, height: 840 }}>
         <Grid container style={containerStyle}>
-          <Grid item xs={12}>
+          <Grid item xs={12} sx={{bgcolor: '#CDD8E6'}}>
             <Paper elevation={0} square={true} style={paperStyleMobile}>
-              <Grid container justify="center" alignItems="center">
+              <Grid container justify="center" alignItems="center" sx={{bgcolor: '#CDD8E6'}}>
                 <Grid item xs={1} />
-                <Grid item xs={5} style={{ textAlign: 'center' }}>
-                  <img src={matt} alt='Matt' style={pictureStyleMobile} />
+                <Grid item xs={5} style={{ textAlign: "center" }}>
+                  <img src={matt} alt="Matt" style={pictureStyleMobile} />
                 </Grid>
-                <Grid item xs={5} style={{ textAlign: 'center' }}>
+                <Grid item xs={5} style={{ textAlign: "center" }}>
                   <Typography
                     align="left"
                     color="#1F78C6"
@@ -215,7 +215,7 @@ export default function Team() {
                   <Typography
                     align="left"
                     color="#1F78C6"
-                    variant="h6"
+                    variant="h7"
                     display="block"
                     style={subTitleStyle}
                   >
@@ -225,44 +225,14 @@ export default function Team() {
               </Grid>
             </Paper>
           </Grid>
-          <Grid item xs={12}>
+          <Grid item xs={12} sx={{bgcolor: '#CDD8E6'}}>
             <Paper elevation={0} square={true} style={paperStyleMobile}>
-              <Grid container justify="center" alignItems="center">
+              <Grid container justify="center" alignItems="center" sx={{bgcolor: '#CDD8E6'}}>
                 <Grid item xs={1} />
-                <Grid item xs={5} style={{ textAlign: 'center' }}>
-                  <img src={mom} alt='Matt' style={pictureStyleMobile} />
+                <Grid item xs={5} style={{ textAlign: "center" }}>
+                  <img src={nick} alt="Nick" style={pictureStyleMobile} />
                 </Grid>
-                <Grid item xs={5} style={{ textAlign: 'center' }}>
-                  <Typography
-                    align="left"
-                    color="#1F78C6"
-                    variant="h4"
-                    display="block"
-                    style={titleStyle}
-                  >
-                    Lee Ann Amunategui
-                  </Typography>
-                  <Typography
-                    align="left"
-                    color="#1F78C6"
-                    variant="h6"
-                    display="block"
-                    style={subTitleStyle}
-                  >
-                    Secretary
-                  </Typography>
-                </Grid>
-              </Grid>
-            </Paper>
-          </Grid>
-          <Grid item xs={12}>
-            <Paper elevation={0} square={true} style={paperStyleMobile}>
-              <Grid container justify="center" alignItems="center">
-                <Grid item xs={1} />
-                <Grid item xs={5} style={{ textAlign: 'center' }}>
-                  <img src={nick} alt='Matt' style={pictureStyleMobile} />
-                </Grid>
-                <Grid item xs={5} style={{ textAlign: 'center' }}>
+                <Grid item xs={5} style={{ textAlign: "center" }}>
                   <Typography
                     align="left"
                     color="#1F78C6"
@@ -275,7 +245,7 @@ export default function Team() {
                   <Typography
                     align="left"
                     color="#1F78C6"
-                    variant="h6"
+                    variant="h7"
                     display="block"
                     style={subTitleStyle}
                   >
@@ -285,14 +255,44 @@ export default function Team() {
               </Grid>
             </Paper>
           </Grid>
-          <Grid item xs={12}>
+          <Grid item xs={12} sx={{bgcolor: '#CDD8E6'}}>
             <Paper elevation={0} square={true} style={paperStyleMobile}>
-              <Grid container justify="center" alignItems="center">
+              <Grid container justify="center" alignItems="center" sx={{bgcolor: '#CDD8E6'}}>
                 <Grid item xs={1} />
-                <Grid item xs={5} style={{ textAlign: 'center' }}>
-                  <img src={drew} alt='Matt' style={pictureStyleMobile} />
+                <Grid item xs={5} style={{ textAlign: "center" }}>
+                  <img src={mom} alt="Lee Ann" style={pictureStyleMobile} />
                 </Grid>
-                <Grid item xs={5} style={{ textAlign: 'center' }}>
+                <Grid item xs={5} style={{ textAlign: "center" }}>
+                  <Typography
+                    align="left"
+                    color="#1F78C6"
+                    variant="h4"
+                    display="block"
+                    style={titleStyle}
+                  >
+                    Lee Ann Amunategui
+                  </Typography>
+                  <Typography
+                    align="left"
+                    color="#1F78C6"
+                    variant="h7"
+                    display="block"
+                    style={subTitleStyle}
+                  >
+                    Secretary
+                  </Typography>
+                </Grid>
+              </Grid>
+            </Paper>
+          </Grid>
+          <Grid item xs={12} sx={{bgcolor: '#CDD8E6'}}>
+            <Paper elevation={0} square={true} style={paperStyleMobile}>
+              <Grid container justify="center" alignItems="center" sx={{bgcolor: '#CDD8E6'}}>
+                <Grid item xs={1} />
+                <Grid item xs={5} style={{ textAlign: "center" }}>
+                  <img src={drew} alt="Drew" style={pictureStyleMobile}/>
+                </Grid>
+                <Grid item xs={5} style={{ textAlign: "center" }}>
                   <Typography
                     align="left"
                     color="#1F78C6"
@@ -305,7 +305,7 @@ export default function Team() {
                   <Typography
                     align="left"
                     color="#1F78C6"
-                    variant="h6"
+                    variant="h7"
                     display="block"
                     style={subTitleStyle}
                   >

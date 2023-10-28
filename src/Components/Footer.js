@@ -24,7 +24,7 @@ export default function Footer() {
         component="p"
         sx={{ pb: 5 }}
       >
-        <IconButton size='large' href='https://www.instagram.com/cleatsforathletes/?hl=en' sx={{ "&:hover": { color: '#FC659A' }, p: 0 }}><InstagramIcon sx={{ fontSize: 50 }} /></IconButton>
+        <IconButton size='large' href='https://www.instagram.com/cleats4athletes/' sx={{ "&:hover": { color: '#FC659A' }, p: 0 }}><InstagramIcon sx={{ fontSize: 50 }} /></IconButton>
       </Typography>
       <Copyright />
     </Box>

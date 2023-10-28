@@ -56,8 +56,8 @@ function Count() {
   return (
     <>
       {/* mobile */}
-      <Grid container justifyContent="center" alignItems="center" sx={{ backgroundColor: '#000000', height: 100, display: { xs: 'flex', sm: 'none' } }}>
-        <Grid item xs={12} sm={4} sx={{border: '4px solid #79ADDC'}}>
+      <Grid container justifyContent="center" alignItems="center" sx={{ backgroundColor: '#000000', height: 130, display: { xs: 'flex', sm: 'none' } }}>
+        <Grid item xs={12} sm={4} sx={{border: '2px solid #79ADDC'}}>
           <Typography
             variant="h6"
             color="#79ADDC"
@@ -67,7 +67,7 @@ function Count() {
             Founded in: December 2020
           </Typography>
         </Grid>
-        <Grid item xs={12} sm={4} sx={{border: '4px solid #79ADDC'}}>
+        <Grid item xs={12} sm={4} sx={{border: '2px solid #79ADDC'}}>
           <Typography
             variant="h6"
             color="#79ADDC"
@@ -77,7 +77,7 @@ function Count() {
             Total number of items collected: 580
           </Typography>
         </Grid>
-        <Grid item xs={12} sm={4} sx={{border: '4px solid #79ADDC'}}>
+        <Grid item xs={12} sm={4} sx={{border: '2px solid #79ADDC'}}>
           <Typography
             variant="h6"
             color="#79ADDC"
