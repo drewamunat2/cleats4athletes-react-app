@@ -148,7 +148,7 @@ export default function About() {
                 Police Athletic League (PAL) of Hollywood, FL, who then
                 distributed them to the kids. After introducing the idea to the
                 community service contact at their school, they realized they
-                could be more effective if they created a Not-for Profit
+                could be more effective if they created a Not for Profit
                 Corporation. In 2022 our CEO, Matthew Amunategui, filed articles
                 of incorporation to make Cleats4Athletes an official Florida
                 501(c)(3) Not for Profit corporation. Now, one of our goals is
@@ -173,7 +173,7 @@ export default function About() {
                 display="block"
                 style={missionStyle}
               >
-                Since 2020, we have collected approximately 566 items (approx.
+                Since 2020, we have collected approximately 580 items (approx.
                 value $2279), which includes cleats, sneakers, athletic
                 clothing, athletic equipment, and clothes/shoes. We have
                 received $2000 from donors which we used to purchase 30 pairs of
@@ -306,7 +306,7 @@ export default function About() {
                 Police Athletic League (PAL) of Hollywood, FL, who then
                 distributed them to the kids. After introducing the idea to the
                 community service contact at their school, they realized they
-                could be more effective if they created a Not-for Profit
+                could be more effective if they created a Not for Profit
                 Corporation. In 2022 our CEO, Matthew Amunategui, filed articles
                 of incorporation to make Cleats4Athletes an official Florida
                 501(c)(3) Not for Profit corporation. Now, one of our goals is
@@ -331,7 +331,7 @@ export default function About() {
                 display="block"
                 style={missionStyle}
               >
-                Since 2020, we have collected approximately 566 items (approx.
+                Since 2020, we have collected approximately 580 items (approx.
                 value $2279), which includes cleats, sneakers, athletic
                 clothing, athletic equipment, and clothes/shoes. We have
                 received $2000 from donors which we used to purchase 30 pairs of

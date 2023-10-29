@@ -42,6 +42,9 @@ const titleStyle = {
   marginBottom: "10%",
 };
 
+const CELL = 'Cell: +1 (954)-774-2141';
+const EMAIL = 'Cleats4Athletes@yahoo.com';
+
 export default function ContactUs() {
   const theme = useTheme();
   const mobile = useMediaQuery(theme.breakpoints.down("sm"));
@@ -60,7 +63,7 @@ export default function ContactUs() {
                   display="block"
                   style={titleStyle}
                 >
-                  Cell: +1 (954)-665-3765
+                  {CELL}
                 </Typography>
               </Link>
               <Link href="mailto:Cleats4Athletes@yahoo.com">
@@ -71,7 +74,7 @@ export default function ContactUs() {
                   display="block"
                   style={titleStyle}
                 >
-                  Email: Cleats4Athletes@yahoo.com
+                  {EMAIL}
                 </Typography>
               </Link>
             </Paper>
@@ -94,7 +97,7 @@ export default function ContactUs() {
                   display="block"
                   style={titleStyle}
                 >
-                  Cell: +1 (954)-665-3765
+                  {CELL}
                 </Typography>
               </Link>
               <Link href="mailto:Cleats4Athletes@yahoo.com">
@@ -105,7 +108,7 @@ export default function ContactUs() {
                   display="block"
                   style={titleStyle}
                 >
-                  Email: Cleats4Athletes@yahoo.com
+                  {EMAIL}
                 </Typography>
               </Link>
             </Paper>

@@ -64,7 +64,7 @@ function Count() {
             display="block"
             align="center"
           >
-            Founded in: December 2020
+            Founded in: 2020
           </Typography>
         </Grid>
         <Grid item xs={12} sm={4} sx={{border: '2px solid #79ADDC'}}>
@@ -97,7 +97,7 @@ function Count() {
               display="block"
               align="center"
             >
-              Founded in: December 2020
+              Founded in: 2020
             </Typography>
           </Grid>
           <Grid item sm={4}>
