@@ -6,7 +6,7 @@ const paperStyle = {
   alignItems: "center",
   textAlign: "center",
   verticalAlign: "middle",
-  backgroundColor: "#000000",
+  backgroundColor: "#FFFFFF",
   height: 700,
   margin: 25,
   border: "4px solid #79ADDC",
@@ -17,7 +17,7 @@ const paperStyleMobile = {
   alignItems: "center",
   textAlign: "center",
   verticalAlign: "middle",
-  backgroundColor: "#000000",
+  backgroundColor: "#FFFFFF",
   margin: 25,
   border: "4px solid #79ADDC",
 };
@@ -49,7 +49,7 @@ export default function Events() {
   if (!mobile) {
     //laptop
     return (
-      <Box sx={{ bgcolor: "black", height: 750, minWidth: 1071 }}>
+      <Box sx={{ bgcolor: "white", height: 750, minWidth: 1071 }}>
         <Grid container style={containerStyle}>
           <Grid item xs={12} sm={6}>
             <Paper elevation={0} square={true} style={paperStyle}>
@@ -97,7 +97,7 @@ export default function Events() {
   } else {
     //mobile
     return (
-      <Box sx={{ bgcolor: "black", minWidth: 360 }}>
+      <Box sx={{ bgcolor: "white", minWidth: 360 }}>
         <Grid container style={containerStyle}>
           <Grid item xs={12} sm={6}>
             <Paper elevation={0} square={true} style={paperStyleMobile}>

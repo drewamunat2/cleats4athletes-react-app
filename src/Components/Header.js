@@ -66,16 +66,6 @@ export default function Header() {
                       size="small"
                       variant="text"
                       color="inherit"
-                      href="/events"
-                    >
-                      Events
-                    </Button>
-                  </Grid>
-                  <Grid item>
-                    <Button
-                      size="small"
-                      variant="text"
-                      color="inherit"
                       href="/team"
                     >
                       Team
@@ -126,6 +116,16 @@ export default function Header() {
                       size="small"
                       variant="text"
                       color="inherit"
+                      href="/events"
+                    >
+                      Events
+                    </Button>
+                  </Grid>
+                  <Grid item>
+                    <Button
+                      size="small"
+                      variant="text"
+                      color="inherit"
                       href="/donate"
                     >
                       Donate Now
@@ -148,16 +148,6 @@ export default function Header() {
                       href="/about"
                     >
                       About
-                    </Button>
-                  </Grid>
-                  <Grid item>
-                    <Button
-                      size="medium"
-                      variant="text"
-                      color="inherit"
-                      href="/events"
-                    >
-                      Events
                     </Button>
                   </Grid>
                   <Grid item>
@@ -198,6 +188,16 @@ export default function Header() {
                       href="/news"
                     >
                       News
+                    </Button>
+                  </Grid>
+                  <Grid item>
+                    <Button
+                      size="medium"
+                      variant="text"
+                      color="inherit"
+                      href="/events"
+                    >
+                      Events
                     </Button>
                   </Grid>
                   <Grid item>
@@ -244,16 +244,6 @@ export default function Header() {
                       size="medium"
                       variant="text"
                       color="inherit"
-                      href="/events"
-                    >
-                      Events
-                    </Button>
-                  </Grid>
-                  <Grid item>
-                    <Button
-                      size="medium"
-                      variant="text"
-                      color="inherit"
                       href="/team"
                     >
                       Team
@@ -287,6 +277,16 @@ export default function Header() {
                       href="/news"
                     >
                       News
+                    </Button>
+                  </Grid>
+                  <Grid item>
+                    <Button
+                      size="medium"
+                      variant="text"
+                      color="inherit"
+                      href="/events"
+                    >
+                      Events
                     </Button>
                   </Grid>
                   <Grid item>
@@ -368,16 +368,6 @@ export default function Header() {
                       size="small"
                       variant="text"
                       color="inherit"
-                      href="/events"
-                    >
-                      Events
-                    </Button>
-                  </Grid>
-                  <Grid item>
-                    <Button
-                      size="small"
-                      variant="text"
-                      color="inherit"
                       href="/team"
                     >
                       Team
@@ -411,6 +401,16 @@ export default function Header() {
                       href="/news"
                     >
                       News
+                    </Button>
+                  </Grid>
+                  <Grid item>
+                    <Button
+                      size="small"
+                      variant="text"
+                      color="inherit"
+                      href="/events"
+                    >
+                      Events
                     </Button>
                   </Grid>
                   <Grid item>
@@ -457,16 +457,6 @@ export default function Header() {
                       size="medium"
                       variant="text"
                       color="inherit"
-                      href="/events"
-                    >
-                      Events
-                    </Button>
-                  </Grid>
-                  <Grid item>
-                    <Button
-                      size="medium"
-                      variant="text"
-                      color="inherit"
                       href="/team"
                     >
                       Team
@@ -500,6 +490,16 @@ export default function Header() {
                       href="/news"
                     >
                       News
+                    </Button>
+                  </Grid>
+                  <Grid item>
+                    <Button
+                      size="medium"
+                      variant="text"
+                      color="inherit"
+                      href="/events"
+                    >
+                      Events
                     </Button>
                   </Grid>
                   <Grid item>
@@ -546,16 +546,6 @@ export default function Header() {
                       size="medium"
                       variant="text"
                       color="inherit"
-                      href="/events"
-                    >
-                      Events
-                    </Button>
-                  </Grid>
-                  <Grid item>
-                    <Button
-                      size="medium"
-                      variant="text"
-                      color="inherit"
                       href="/team"
                     >
                       Team
@@ -589,6 +579,16 @@ export default function Header() {
                       href="/news"
                     >
                       News
+                    </Button>
+                  </Grid>
+                  <Grid item>
+                    <Button
+                      size="medium"
+                      variant="text"
+                      color="inherit"
+                      href="/events"
+                    >
+                      Events
                     </Button>
                   </Grid>
                   <Grid item>

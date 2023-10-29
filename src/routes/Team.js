@@ -3,7 +3,7 @@ import { useTheme } from "@mui/material/styles";
 import drew from "../assets/drew.jpeg";
 import nick from "../assets/nick.jpeg";
 import matt from "../assets/matt.jpeg";
-import mom from "../assets/mom.jpeg";
+import mom from "../assets/mom.jpg";
 
 const pictureStyle = {
   width: "75%",
@@ -118,7 +118,7 @@ export default function Team() {
                     display="block"
                     style={subTitleStyle}
                   >
-                    Treasurer, Co-Founder
+                    COO, Co-Founder
                   </Typography>
                 </Grid>
                 <Grid item xs={1} />
@@ -149,7 +149,7 @@ export default function Team() {
                     display="block"
                     style={subTitleStyle}
                   >
-                    Secretary
+                    Secretary, Treasurer 
                   </Typography>
                 </Grid>
                 <Grid item xs={1} />
@@ -249,7 +249,7 @@ export default function Team() {
                     display="block"
                     style={subTitleStyle}
                   >
-                    Treasurer, Co-Founder
+                    COO, Co-Founder
                   </Typography>
                 </Grid>
               </Grid>
@@ -279,7 +279,7 @@ export default function Team() {
                     display="block"
                     style={subTitleStyle}
                   >
-                    Secretary
+                    Secretary, Treasurer 
                   </Typography>
                 </Grid>
               </Grid>

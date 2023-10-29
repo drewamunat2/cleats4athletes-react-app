@@ -37,7 +37,7 @@ function TitleImage() {
           display="block"
           align="center"
         >
-          Cleats For Athletes
+          Cleats4Athletes
         </Typography>
         <Typography
           variant="h4"
