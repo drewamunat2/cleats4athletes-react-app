@@ -26,6 +26,8 @@ const styles = {
   }
 };
 
+const STATS = ["Founded in: 2020", "Total number of items collected: 580", "Total monetary donations: $2000"];
+
 function TitleImage() {
   return (
     <Grid container justifyContent="center" alignItems="center" sx={{ backgroundColor: '#000000', height: 600, flex: 1 }}>
@@ -64,7 +66,7 @@ function Count() {
             display="block"
             align="center"
           >
-            Founded in: 2020
+            {STATS[0]}
           </Typography>
         </Grid>
         <Grid item xs={12} sm={4} sx={{border: '2px solid #79ADDC'}}>
@@ -74,7 +76,7 @@ function Count() {
             display="block"
             align="center"
           >
-            Total number of items collected: 580
+            {STATS[1]}
           </Typography>
         </Grid>
         <Grid item xs={12} sm={4} sx={{border: '2px solid #79ADDC'}}>
@@ -84,7 +86,7 @@ function Count() {
             display="block"
             align="center"
           >
-            Total monetary donations: $2000
+            {STATS[2]}
           </Typography>
         </Grid>
       </Grid>
@@ -97,7 +99,7 @@ function Count() {
               display="block"
               align="center"
             >
-              Founded in: 2020
+              {STATS[0]}
             </Typography>
           </Grid>
           <Grid item sm={4}>
@@ -107,7 +109,7 @@ function Count() {
               display="block"
               align="center"
             >
-              Total number of items collected: 580
+              {STATS[1]}
             </Typography>
           </Grid>
           <Grid item sm={4}>
@@ -117,7 +119,7 @@ function Count() {
               display="block"
               align="center"
             >
-              Total monetary donations: $2000
+              {STATS[2]}
             </Typography>
           </Grid>
       </Grid>

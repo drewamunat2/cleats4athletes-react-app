@@ -84,7 +84,7 @@ export default function About() {
                 display="block"
                 style={subTitleStyle}
               >
-                (954)-665-3765
+                (954)-774-2141
               </Typography>
               <Typography
                 align="center"
@@ -242,7 +242,7 @@ export default function About() {
                 display="block"
                 style={subTitleStyle}
               >
-                (954)-665-3765
+                (954)-774-2141
               </Typography>
               <Typography
                 align="center"
