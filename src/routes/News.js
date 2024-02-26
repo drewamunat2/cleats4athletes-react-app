@@ -3,6 +3,8 @@ import { useTheme } from "@mui/material/styles";
 import news from "../assets/news.jpeg";
 import news2 from "../assets/matt_news_2.png";
 import news3 from "../assets/matt_news_3.png";
+import news4 from "../assets/IMG_3431.jpeg";
+import news5 from "../assets/IMG_3432.jpg";
 
 const containerStyle = {
   justifyContent: "center",
@@ -68,6 +70,33 @@ export default function News() {
         <Grid container style={containerStyle}>
           <Grid item xs={5}>
             <Paper elevation={0} square={true} style={paperStyleImgSplit}>
+              <a href="https://www.instagram.com/p/C3jAiuJs35h/">
+                <img src={news5} alt="news"></img>
+              </a>
+            </Paper>
+          </Grid>
+          <Grid item xs={2}>
+            <Typography>
+              On January 9th we collected 37 items from the Johns Hopkins
+              Football team, donated to the Hollywood Police athletic league!{" "}
+              <HopkinsFootballLink />
+            </Typography>
+            <Typography>
+              We also purchased 21 brand new pairs of cleats through nations for
+              Hollywood police athletic league! <HollywoodflpalLink />
+            </Typography>
+          </Grid>
+          <Grid item xs={5}>
+            <Paper elevation={0} square={true} style={paperStyleImgSplit}>
+              <a href="https://www.instagram.com/p/C2qGHSgJcVY/">
+                <img src={news4} alt="news"></img>
+              </a>
+            </Paper>
+          </Grid>
+        </Grid>
+        <Grid container style={containerStyle}>
+          <Grid item xs={5}>
+            <Paper elevation={0} square={true} style={paperStyleImgSplit}>
               <a href="https://www.instagram.com/p/CzXGzNjuNCv/?img_index=6">
                 <img src={news2} alt="news"></img>
               </a>
@@ -80,11 +109,7 @@ export default function News() {
               our athletes. Thank you so much for your continuing support of the
               Hollywood PAL."
             </Typography>
-            <a href="https://www.instagram.com/hollywoodflpal/">
-              <Typography variant="h5" sx={{ mt: 2 }}>
-                -@hollywoodflpal
-              </Typography>
-            </a>
+            <HollywoodflpalLink />
           </Grid>
           <Grid item xs={5}>
             <Paper elevation={0} square={true} style={paperStyleImgSplit}>
@@ -107,7 +132,34 @@ export default function News() {
     //mobile
     return (
       <Box sx={{ bgcolor: "white", minWidth: 360 }}>
-        <Grid container style={containerStyle} sx={{mb:5}}>
+        <Grid container style={containerStyle}>
+          <Grid item xs={12}>
+            <Paper elevation={0} square={true} style={paperStyleImgSplitMobile}>
+              <a href="https://www.instagram.com/p/C3jAiuJs35h/">
+                <img src={news5} alt="news"></img>
+              </a>
+            </Paper>
+          </Grid>
+          <Grid item xs={12} sx={{ mx: 2 }}>
+            <Typography>
+              On January 9th we collected 37 items from the Johns Hopkins
+              Football team, donated to the Hollywood Police athletic league!{" "}
+              <HopkinsFootballLink />
+            </Typography>
+            <Typography>
+              We also purchased 21 brand new pairs of cleats through nations for
+              Hollywood police athletic league! <HollywoodflpalLink />
+            </Typography>
+          </Grid>
+          <Grid item xs={12}>
+            <Paper elevation={0} square={true} style={paperStyleImgSplitMobile}>
+              <a href="https://www.instagram.com/p/C2qGHSgJcVY/">
+                <img src={news4} alt="news"></img>
+              </a>
+            </Paper>
+          </Grid>
+        </Grid>
+        <Grid container style={containerStyle} sx={{ mb: 5 }}>
           <Grid item xs={12}>
             <Paper elevation={0} square={true} style={paperStyleImgSplitMobile}>
               <a href="https://www.instagram.com/p/CzXGzNjuNCv/?img_index=6">
@@ -116,17 +168,13 @@ export default function News() {
             </Paper>
           </Grid>
           <Grid item xs={12}>
-            <Typography sx={{mx:2}}>
+            <Typography sx={{ mx: 2 }}>
               "Today @cleats4athletes CEO Matthew Amunategui came by the
               @hollywoodflpal & donated 25 pairs of shoes & 30 pair of socks for
               our athletes. Thank you so much for your continuing support of the
               Hollywood PAL."
             </Typography>
-            <a href="https://www.instagram.com/hollywoodflpal/">
-              <Typography variant="h5" sx={{ mt: 2 }}>
-                -@hollywoodflpal
-              </Typography>
-            </a>
+            <HollywoodflpalLink />
           </Grid>
           <Grid item xs={12}>
             <Paper elevation={0} square={true} style={paperStyleImgSplitMobile}>
@@ -147,3 +195,23 @@ export default function News() {
     );
   }
 }
+
+const HollywoodflpalLink = () => {
+  return (
+    <a href="https://www.instagram.com/hollywoodflpal/">
+      <Typography variant="h5" sx={{ mb: 2 }}>
+        @hollywoodflpal
+      </Typography>
+    </a>
+  );
+};
+
+const HopkinsFootballLink = () => {
+  return (
+    <a href="https://www.instagram.com/hollywoodflpal/">
+      <Typography variant="h5" sx={{ mb: 2 }}>
+        @hopkinsfootball
+      </Typography>
+    </a>
+  );
+};
