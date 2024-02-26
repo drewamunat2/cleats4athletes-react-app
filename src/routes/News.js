@@ -70,7 +70,7 @@ export default function News() {
         <Grid container style={containerStyle}>
           <Grid item xs={5}>
             <Paper elevation={0} square={true} style={paperStyleImgSplit}>
-              <a href="https://www.instagram.com/p/C3jAiuJs35h/">
+              <a href="https://www.instagram.com/p/C2qGHSgJcVY/">
                 <img src={news5} alt="news"></img>
               </a>
             </Paper>
@@ -88,7 +88,7 @@ export default function News() {
           </Grid>
           <Grid item xs={5}>
             <Paper elevation={0} square={true} style={paperStyleImgSplit}>
-              <a href="https://www.instagram.com/p/C2qGHSgJcVY/">
+              <a href="https://www.instagram.com/p/C3jAiuJs35h/">
                 <img src={news4} alt="news"></img>
               </a>
             </Paper>
@@ -135,7 +135,7 @@ export default function News() {
         <Grid container style={containerStyle}>
           <Grid item xs={12}>
             <Paper elevation={0} square={true} style={paperStyleImgSplitMobile}>
-              <a href="https://www.instagram.com/p/C3jAiuJs35h/">
+              <a href="https://www.instagram.com/p/C2qGHSgJcVY/">
                 <img src={news5} alt="news"></img>
               </a>
             </Paper>
@@ -153,7 +153,7 @@ export default function News() {
           </Grid>
           <Grid item xs={12}>
             <Paper elevation={0} square={true} style={paperStyleImgSplitMobile}>
-              <a href="https://www.instagram.com/p/C2qGHSgJcVY/">
+              <a href="https://www.instagram.com/p/C3jAiuJs35h/">
                 <img src={news4} alt="news"></img>
               </a>
             </Paper>
@@ -208,7 +208,7 @@ const HollywoodflpalLink = () => {
 
 const HopkinsFootballLink = () => {
   return (
-    <a href="https://www.instagram.com/hollywoodflpal/">
+    <a href="https://www.instagram.com/hopkinsfootball/">
       <Typography variant="h5" sx={{ mb: 2 }}>
         @hopkinsfootball
       </Typography>
