@@ -1,6 +1,7 @@
 import { Box, Grid, Paper, useMediaQuery } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
-import test from "../assets/test.jpeg";
+import test1 from "../assets/test.jpeg";
+import test2 from "../assets/pal_test.JPEG";
 
 const containerStyle = {
   justifyContent: "center",
@@ -15,7 +16,7 @@ const paperStyleImg = {
   alignItems: "center",
   textAlign: "center",
   verticalAlign: "middle",
-  backgroundColor: '#FFFFFF',
+  backgroundColor: "#FFFFFF",
   height: 800,
   margin: 25,
 };
@@ -25,8 +26,18 @@ const paperStyleImgMobile = {
   alignItems: "center",
   textAlign: "center",
   verticalAlign: "middle",
-  backgroundColor: '#FFFFFF',
+  backgroundColor: "#FFFFFF",
   height: 600,
+  margin: 25,
+};
+
+const paperStyleImgMobileTall = {
+  justifyContent: "center",
+  alignItems: "center",
+  textAlign: "center",
+  verticalAlign: "middle",
+  backgroundColor: "#FFFFFF",
+  height: 400,
   margin: 25,
 };
 
@@ -39,13 +50,13 @@ export default function Test() {
       <Box sx={{ bgcolor: "white", minWidth: 1071 }}>
         <Grid container style={containerStyle}>
           <Grid item xs={6}>
-            <Paper
-              elevation={0}
-              square={true}
-              style={paperStyleImg}
-            >
-              <img src={test} alt='testimonial'>
-              </img>
+            <Paper elevation={0} square={true} style={paperStyleImg}>
+              <img src={test1} alt="testimonial 1"></img>
+            </Paper>
+          </Grid>
+          <Grid item xs={6}>
+            <Paper elevation={0} square={true} style={paperStyleImg}>
+              <img src={test2} alt="testimonial 2"></img>
             </Paper>
           </Grid>
         </Grid>
@@ -57,13 +68,13 @@ export default function Test() {
       <Box sx={{ bgcolor: "white", minWidth: 360 }}>
         <Grid container style={containerStyle}>
           <Grid item xs={12}>
-            <Paper
-              elevation={0}
-              square={true}
-              style={paperStyleImgMobile}
-            >
-              <img src={test} alt='testimonial'>
-              </img>
+            <Paper elevation={0} square={true} style={paperStyleImgMobile}>
+              <img src={test1} alt="testimonial 1"></img>
+            </Paper>
+          </Grid>
+          <Grid item xs={12}>
+            <Paper elevation={0} square={true} style={paperStyleImgMobileTall}>
+              <img src={test2} alt="testimonial 2"></img>
             </Paper>
           </Grid>
         </Grid>
